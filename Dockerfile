@@ -1,3 +1,3 @@
 FROM openjdk:8
-ADD target/hulk-app9-showtym-devops-backend-0.0.1-SNAPSHOT.jar hulk-app9-showtym-devops-backend-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","hulk-app9-showtym-devops-backend-0.0.1-SNAPSHOT.jar"]
+ADD target/mesh-app9-githubactions-dockerregistry-dev.jar mesh-app9-githubactions-dockerregistry-dev.jar
+ENTRYPOINT ["java","-jar","mesh-app9-githubactions-dockerregistry-dev.jar"]
