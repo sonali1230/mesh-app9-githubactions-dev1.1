@@ -44,6 +44,11 @@ jobs:
             java-version: 14
         - run: mvn -B package --file pom.xml -DskipTests
         
+        - name: Run unit tests
+          run: |
+           npm install
+           npm test
+        
      
 
        
