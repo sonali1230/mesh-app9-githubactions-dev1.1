@@ -44,12 +44,7 @@ jobs:
             java-version: 14
         - run: mvn -B package --file pom.xml -DskipTests
         
-        - uses: actions/upload-artifact@v1
-          with:
-            name: Package
-            path: staging
-       
-
+     
 
        
 
