@@ -44,23 +44,22 @@ jobs:
             java-version: 14
         - run: mvn -B package --file pom.xml -DskipTests
         
-        - name: Generate JaCoCo Badge
-      id: jacoco
-      uses: cicirello/jacoco-badge-generator@v2
-      with:
-        generate-branches-badge: true
-      
-      
-      - name: Log coverage percentage
-        run: |
-        echo "coverage = ${{ steps.jacoco.outputs.coverage }}"
-        echo "branch coverage = ${{ steps.jacoco.outputs.branches }}"
-
-
-       
-        
+    
+        - name: Build with Maven
+          run: mvn -B test
+          
+          
         - name: Upload JaCoCo coverage report
           uses: actions/upload-artifact@v2
           with:
-          name: jacoco-report
-          path: target/site/jacoco/
+           name: jacoco-report
+           path: reports/jacoco/
+
+       
+
+    
+    
+    
+
+   
+    
