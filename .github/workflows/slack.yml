@@ -11,4 +11,3 @@ jobs:
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_TOKEN }}
 
-  
