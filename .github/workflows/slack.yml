@@ -11,5 +11,5 @@ jobs:
       
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_TOKEN }}
-        registry: https://hooks.slack.com/services/
+        registry: https://hooks.slack.com/services/ 
 
